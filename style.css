@@ -9,6 +9,11 @@
   display: none;
 }
 
+::selection {
+  background-color: #ffffff00;
+  color: green;
+}
+
 html,
 body {
   width: 100%;
@@ -169,9 +174,8 @@ body {
 
 #motive span {
   display: inline-block;
-
-  margin: 0 10px;
-  margin-bottom: -12.5px;
+  margin: 8px 10px;
+  margin-bottom: -14px;
   background-color: aliceblue;
   border-radius: 100px;
 }
@@ -179,11 +183,11 @@ body {
 #motive p {
   margin-top: 30px;
   line-height: 1.7;
-  letter-spacing: -0.15vw;
+  letter-spacing: -0.13vw;
   font-weight: 500;
   width: 80%;
   text-align: right;
-  font-size: 3vw;
+  font-size: 2.2vw;
 }
 
 #onespan {
@@ -208,4 +212,74 @@ body {
   background-image: url(./image/grass.jpg);
   background-size: cover;
   background-position: center;
+}
+
+#picture {
+  margin-top: 8vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3vw;
+  padding-left: 14vw;
+  padding-right: 12vw;
+  object-fit: fill;
+}
+
+#firstpic {
+  width: 20%;
+}
+
+#firstpic #picimg {
+  height: 24vw;
+  width: 110%;
+  margin-bottom: 1vw;
+}
+
+#firstpic #picimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#firstpic h1,
+#secpic h1 {
+  font-weight: 800;
+  letter-spacing: -0.1vw;
+}
+
+#firstpic p {
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0.7;
+}
+
+#picimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#secpic {
+  width: 35%;
+  text-align: right;
+}
+
+#secpic #picimg {
+  height: 37vw;
+  width: 100%;
+  margin-bottom: 1vw;
+}
+
+#secpic #picimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#secpic p {
+  padding-left: 25%;
+  text-align: right;
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0.7;
 }
