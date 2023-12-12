@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+    <!-- Recommended -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -25,18 +32,18 @@
           </div>
         </div>
         <div id="hero">
-          <div id="sustain">
+          <div class="anim2" id="sustain">
             <h5>01.</h5>
             <h2>Sustainability.</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Laudantium.
             </p>
-            <div id="susimagewrapper">
+            <div class="imgeff" id="susimagewrapper">
               <img src="./image/pinkgreenplant.jpg" alt="shit" />
             </div>
           </div>
-          <div id="ephemeral">
+          <div class="anim2" id="ephemeral">
             <div id="equi">
               <div id="heading">
                 <h1>Ephemeral</h1>
@@ -50,67 +57,90 @@
               tempora impedit
             </p>
           </div>
-          <div id="visit">
+          <div class="anim2" id="visit">
             <div id="circle">
               <i class="ri-arrow-down-line"></i>
             </div>
             <h3>Visit Below</h3>
           </div>
         </div>
-        <div id="motive">
-          <h3>Motive</h3>
+      </div>
+      <div id="motive">
+        <h3>Motive</h3>
+        <p>
+          Lorem ipsum dolor sit amet<span id="onespan"></span>consectetur gig
+          adipisicing elit. In neque<span id="twospan"></span>accusantium culpa
+          quia quidem maiores cum? Ex modi qui, repellat odio soluta
+          <span id="threespan"></span>iusto, mollitia
+        </p>
+      </div>
+      <div id="picture">
+        <div id="firstpic">
+          <div class="imgeff" id="picimg">
+            <img src="./image/sea.jpg" alt="ok" />
+          </div>
+          <h1>Synergy.</h1>
           <p>
-            Lorem ipsum dolor sit amet<span id="onespan"></span>consectetur gig
-            adipisicing elit. In neque<span id="twospan"></span>accusantium
-            culpa quia quidem maiores cum? Ex modi qui, repellat odio soluta
-            <span id="threespan"></span>iusto, mollitia
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit modi
+            sequi aut, asperiores laborum quia nostrum totam?
           </p>
         </div>
-        <div id="picture">
-          <div id="firstpic">
-            <div id="picimg">
-              <img src="./image/sea.jpg" alt="ok" />
-            </div>
-            <h1>Synergy.</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit
-              modi sequi aut, asperiores laborum quia nostrum totam?
-            </p>
+        <div id="secpic">
+          <div class="imgeff" id="picimg">
+            <img src="./image/cloud.jpg" alt="ok" />
           </div>
-          <div id="secpic">
-            <div id="picimg">
-              <img src="./image/cloud.jpg" alt="ok" />
-            </div>
-            <h1>Harmony.</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit
-              modi sequi aut, asperiores laborum quia nostrum totam?
-            </p>
-          </div>
+          <h1>Harmony.</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit modi
+            sequi aut, asperiores laborum quia nostrum totam?
+          </p>
         </div>
-        <div id="banner">
-          <div id="bimg">
-            <img src="./image/bottle.jpg" alt="" />
-          </div>
-          <div id="btext">
-            <h1>Meds</h1>
-            <h1>Packs</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-              maiores aperiam aliquam qui debitis. Nisi, repudiandae
-              consectetur? Inventore, iusto non, fugit ab hic excepturi
-              veritatis, neque doloribus perspiciatis tempora tempore!
-            </p>
-          </div>
+      </div>
+      <div id="banner">
+        <div id="bimg">
+          <img src="./image/bottle.jpg" alt="" />
+          <img src="./image/bottle2.jpg" alt="" />
+          <img src="./image/bottle3.jpg" alt="" />
+          <img src="./image/bottle4.jpg" alt="" />
+          <img src="./image/bottle5.jpg" alt="" />
+          <img src="./image/b.jpg" alt="" />
         </div>
-        <div id="future">
-          <video src="./image/back.mp4" autoplay muted loop></video>
-          <div id="ftext">
-            <h1>Think of future</h1>
-            <button>WoooooooooooooW</button>
-          </div>
+        <div id="btext">
+          <h1>Meds</h1>
+          <h1>Packs</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            maiores aperiam aliquam qui debitis. Nisi, repudiandae consectetur?
+            Inventore, iusto non, fugit ab hic excepturi veritatis, neque
+            doloribus perspiciatis tempora tempore!
+          </p>
+        </div>
+      </div>
+      <div id="future">
+        <video src="./image/back.mp4" autoplay muted loop></video>
+        <div id="ftext" class="video-play-button">
+          <span></span>
         </div>
       </div>
     </div>
+
+    <!-- Recommended -->
+    <!--  Gsap is needed for Basic Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <!-- Scroll Trigger is needed for Scroll Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Three.js is needed for 3d Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+    <!-- ControlKit is needed for Debug Panel -->
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/sheryjs/dist/Shery.js"
+    ></script>
+    <script src="script.js"></script>
   </body>
 </html>
